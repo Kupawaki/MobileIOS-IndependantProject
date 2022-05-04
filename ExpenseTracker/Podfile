@@ -1,0 +1,13 @@
+target 'ExpenseTracker' do
+  use_frameworks!
+
+pod 'Charts'
+
+  target 'ExpenseTrackerTests' do
+    inherit! :search_paths
+  end
+
+  target 'ExpenseTrackerUITests' do
+  end
+
+end
