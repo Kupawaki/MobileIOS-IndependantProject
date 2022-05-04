@@ -18,6 +18,8 @@
 		3FB7956C2822CA9D004305EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB7956A2822CA9D004305EC /* LaunchScreen.storyboard */; };
 		3FB795772822CA9D004305EC /* ExpenseTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB795762822CA9D004305EC /* ExpenseTrackerTests.swift */; };
 		3FB795822822CA9D004305EC /* ExpenseTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB795812822CA9D004305EC /* ExpenseTrackerUITests.swift */; };
+		3FD1E74D2822E2DA009148EA /* BarGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1E74C2822E2DA009148EA /* BarGraphViewController.swift */; };
+		3FD1E74F2822E2E9009148EA /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1E74E2822E2E9009148EA /* PieChartViewController.swift */; };
 		43D3ED4C5528A65F244337B8 /* Pods_ExpenseTracker_ExpenseTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820D5323A074F6B42251821C /* Pods_ExpenseTracker_ExpenseTrackerUITests.framework */; };
 		A9C3B83265F5EBFB8D481D7B /* Pods_ExpenseTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EECB69B20B9EA584C98F1FD /* Pods_ExpenseTracker.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		3FB7957D2822CA9D004305EC /* ExpenseTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB795812822CA9D004305EC /* ExpenseTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITests.swift; sourceTree = "<group>"; };
 		3FB795832822CA9D004305EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD1E74C2822E2DA009148EA /* BarGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphViewController.swift; sourceTree = "<group>"; };
+		3FD1E74E2822E2E9009148EA /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		5EECB69B20B9EA584C98F1FD /* Pods_ExpenseTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpenseTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9CFEDB5C85F487E2D15CA5 /* Pods-ExpenseTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-ExpenseTrackerTests/Pods-ExpenseTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		745BF47B9E1EB1BA4F3DDC69 /* Pods-ExpenseTracker-ExpenseTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseTracker-ExpenseTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExpenseTracker-ExpenseTrackerUITests/Pods-ExpenseTracker-ExpenseTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 				3FB7956D2822CA9D004305EC /* Info.plist */,
 				3FB7955F2822CA9C004305EC /* AppDelegate.swift */,
 				3FB795612822CA9C004305EC /* SceneDelegate.swift */,
+				3FD1E74C2822E2DA009148EA /* BarGraphViewController.swift */,
+				3FD1E74E2822E2E9009148EA /* PieChartViewController.swift */,
 			);
 			path = ExpenseTracker;
 			sourceTree = "<group>";
@@ -419,6 +425,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FB795642822CA9C004305EC /* ViewController.swift in Sources */,
+				3FD1E74F2822E2E9009148EA /* PieChartViewController.swift in Sources */,
+				3FD1E74D2822E2DA009148EA /* BarGraphViewController.swift in Sources */,
 				3FB795602822CA9C004305EC /* AppDelegate.swift in Sources */,
 				3FB795622822CA9C004305EC /* SceneDelegate.swift in Sources */,
 			);
