@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R51-dE-W5k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mUl-V9-Sfn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -113,68 +113,19 @@
             <point key="canvasLocation" x="877" y="1553"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="vG1-de-puK">
-            <objects>
-                <tabBarController id="R51-dE-W5k" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Fp-hd-rR7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="jIi-Kh-Loh" kind="relationship" relationship="viewControllers" id="858-iH-6CP"/>
-                        <segue destination="MyN-W6-HWu" kind="relationship" relationship="viewControllers" id="OV8-HH-9GG"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EAw-RL-Xqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4321.739130434783" y="-575.22321428571422"/>
-        </scene>
-        <!--Bar Graph-->
-        <scene sceneID="DnX-eZ-ATW">
-            <objects>
-                <viewController id="jIi-Kh-Loh" customClass="BarGraphViewController" customModule="ExpenseTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gX6-bF-DJz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="a6f-aQ-tmB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Bar Graph" id="juF-kj-K95"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t01-VL-j9t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7052.1739130434789" y="215.625"/>
-        </scene>
-        <!--Pie Chart-->
-        <scene sceneID="ok9-RK-cen">
-            <objects>
-                <viewController id="MyN-W6-HWu" customClass="PieChartViewController" customModule="ExpenseTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Klk-Uv-ZZ9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vYp-BH-POs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Pie Chart" id="67L-Vo-BdY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HYq-Sr-pO4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7773.9130434782619" y="201.5625"/>
-        </scene>
-        <!--Tab Bar Controller-->
         <scene sceneID="Q9n-GG-Zu3">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mUl-V9-Sfn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XDA-xz-kWw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="MyY-bR-7Em" kind="relationship" relationship="viewControllers" id="Opy-Qh-yub"/>
                         <segue destination="ZTd-vg-XRD" kind="relationship" relationship="viewControllers" id="1jt-bV-XoA"/>
                         <segue destination="gIn-l4-fBm" kind="relationship" relationship="viewControllers" id="RA0-29-GNz"/>
-                        <segue destination="MyY-bR-7Em" kind="relationship" relationship="viewControllers" id="Opy-Qh-yub"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBu-Op-ybC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -219,11 +170,11 @@
             </objects>
             <point key="canvasLocation" x="877" y="625"/>
         </scene>
-        <!--Item-->
+        <!--Main-->
         <scene sceneID="UUB-cv-vcR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MyY-bR-7Em" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yOE-U2-eMl"/>
+                    <tabBarItem key="tabBarItem" title="Main" id="yOE-U2-eMl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UIm-CR-w5x">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
