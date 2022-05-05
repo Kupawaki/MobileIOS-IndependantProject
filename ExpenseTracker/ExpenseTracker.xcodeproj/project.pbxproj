@@ -138,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				3FB795652822CA9C004305EC /* Main.storyboard */,
+				3FD1E74E2822E2E9009148EA /* PieChartViewController.swift */,
+				3FD1E74C2822E2DA009148EA /* BarGraphViewController.swift */,
 				3FB795632822CA9C004305EC /* ViewController.swift */,
 				3F57EB692822CDD400BCD28F /* GoogleService-Info.plist */,
 				3FB795682822CA9D004305EC /* Assets.xcassets */,
@@ -145,8 +147,6 @@
 				3FB7956D2822CA9D004305EC /* Info.plist */,
 				3FB7955F2822CA9C004305EC /* AppDelegate.swift */,
 				3FB795612822CA9C004305EC /* SceneDelegate.swift */,
-				3FD1E74C2822E2DA009148EA /* BarGraphViewController.swift */,
-				3FD1E74E2822E2E9009148EA /* PieChartViewController.swift */,
 			);
 			path = ExpenseTracker;
 			sourceTree = "<group>";
