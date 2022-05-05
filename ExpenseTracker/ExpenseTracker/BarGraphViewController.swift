@@ -48,6 +48,8 @@ class BarGraphViewController: UIViewController, ChartViewDelegate
 
     func fetchData()
     {
+        totalExpense = 0.0
+        totalIncome = 0.0
         ref.child("income").getData(completion:
         { error, snapshot in guard error == nil else {return;}
             let income = snapshot.value as! NSDictionary
@@ -75,8 +77,8 @@ class BarGraphViewController: UIViewController, ChartViewDelegate
     {
         var newSet = BarChartDataSet(
         entries: [
-            BarChartDataEntry(x: 1, y: totalIncome),
-            BarChartDataEntry(x: 2, y: totalExpense)
+            BarChartDataEntry(x: 0.2, y: totalIncome),
+            BarChartDataEntry(x: 0.6, y: totalExpense)
         ])
         newSet.label = "Income / Expense"
         
@@ -84,6 +86,7 @@ class BarGraphViewController: UIViewController, ChartViewDelegate
     
         var newData = BarChartData(dataSet: newSet)
         barChart.data = newData
+        fetchData()
         
     }
 }

@@ -48,6 +48,8 @@ class PieChartViewController: UIViewController, ChartViewDelegate
     
     func fetchData()
     {
+        totalExpense = 0.0
+        totalIncome = 0.0
         ref.child("income").getData(completion:
         { error, snapshot in guard error == nil else {return;}
             let income = snapshot.value as! NSDictionary
@@ -82,6 +84,7 @@ class PieChartViewController: UIViewController, ChartViewDelegate
         
         var newData = PieChartData(dataSet: newSet)
         pieChart.data = newData
+        fetchData()
     }
 }
 
